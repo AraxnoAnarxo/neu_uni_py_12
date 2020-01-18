@@ -2,7 +2,7 @@ import requests
 import json
 import pprint
 
-# ДОБАВИТЬ РЕГИОН МОСКВА
+
 
 salary_list_from = [] # список с зарплатами от...
 salary_list_to = [] # список с зарплатами до...
@@ -11,7 +11,7 @@ for n in range(20):
     URL = 'https://api.hh.ru/vacancies'
 
     params = {'text': 'Python && Москва',
-    'only_with_salary': True, # ДОБАВИТЬ РЕГИОН МОСКВА
+    'only_with_salary': True,
     'per_page': 100, 'page': n
     }
 
