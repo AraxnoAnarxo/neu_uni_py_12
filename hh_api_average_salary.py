@@ -10,7 +10,7 @@ salary_list_to = [] # список с зарплатами до...
 for n in range(20):
     URL = 'https://api.hh.ru/vacancies'
 
-    params = {'text': 'Python',
+    params = {'text': 'Python && Москва',
     'only_with_salary': True, # ДОБАВИТЬ РЕГИОН МОСКВА
     'per_page': 100, 'page': n
     }
@@ -27,7 +27,8 @@ for n in range(20):
             salary_list_to.append(j['salary']['to']) # создаем лист с зарплатой до...
 
 print(salary_list_from, len(salary_list_from))
-print(salary_list_to, len(salary_list_to)
+print(salary_list_to, len(salary_list_to))
+
 
 # делим сумму списка зарплат от... на количество элементов списка
 salary_from_average = sum(salary_list_from)/len(salary_list_from)
